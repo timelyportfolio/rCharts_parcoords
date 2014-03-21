@@ -1,0 +1,107 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    <link rel='stylesheet' href='http://syntagmatic.github.io/parallel-coordinates/d3.parcoords.css'>
+    
+    <script src='http://d3js.org/d3.v2.min.js' type='text/javascript'></script>
+    <script src='http://syntagmatic.github.io/parallel-coordinates/d3.parcoords.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }  
+    </style>
+    
+  </head>
+  <body >
+    
+    <div id = 'chart2290584f2d89' class = 'rChart parcoords'></div>    
+    <script id="brushing">
+var params = {
+ "dom": "chart2290584f2d89",
+"width": "800",
+"height": "400",
+"padding": {
+ "top":     24,
+"left":    100,
+"bottom":     12,
+"right":    100 
+},
+"color": d3.scale.category10(),
+"id": "chart2290584f2d89",
+"data": [
+ {
+ "since 2007":   0.47,
+"tckrs": "VEA",
+"2007":   -5.3,
+"2008":  -44.9,
+"2009":   40.2,
+"2010":   17.1,
+"2011":   -9.3,
+"2012":   16.6,
+"2013":   11.2,
+"2014":    2.5 
+},
+{
+ "since 2007":    1.9,
+"tckrs": "EEM",
+"2007":   21.3,
+"2008":  -49.7,
+"2009":   71.8,
+"2010":   21.5,
+"2011":   -6.3,
+"2012":    6.9,
+"2013":  -11.7,
+"2014":    1.4 
+},
+{
+ "since 2007":   5.95,
+"tckrs": "SPY",
+"2007":   -2.7,
+"2008":  -38.3,
+"2009":   32.7,
+"2010":   22.2,
+"2011":    4.2,
+"2012":   16.5,
+"2013":   21.4,
+"2014":    5.4 
+} 
+],
+"colorby": "tckrs",
+"range": [ "SPY", "EEM", "VEA" ],
+"colors": [ "#CA0020", "gray", "#0571B0" ] 
+}
+
+var getColors = params.color
+  //.domain(params.range)
+  //.range(params.colors)
+  //.interpolate(d3.interpolateLab);
+
+var color = function(d) { return getColors(d[params.colorby]); };
+
+  d3.parcoords()("#" + params.dom)
+    .width(params.width)
+    .height(params.height)
+    .margin(params.padding)
+    .data(params.data)
+    .color(color)
+    .alpha(0.4)
+    .render()
+    .shadows()
+    .brushable()  // enable brushing
+    //.reorderable(); // enable moving axes
+</script>
+    
+    
+     <script>
+     d3.selectAll("svg").selectAll("text")
+     .style("font-size","10px")
+     </script>
+         
+  </body>
+</html>
