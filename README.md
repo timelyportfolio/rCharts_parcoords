@@ -7,7 +7,8 @@ my toolset is very dependent on [rCharts](http://rcharts.io), so I am guessing t
 some rCharts.
 
 
-Here is a great video on parallel coordinates at the 2013 Openvis Conference.
-<iframe width="640" height="360" src="//www.youtube.com/embed/ypc7Ul9LkxA" frameborder="0" allowfullscreen></iframe>
+Here is a [great video](http://youtu.be/ypc7Ul9LkxA) on parallel coordinates at the 2013 Openvis Conference.
+
+
 
 Please see the [license for parallel coordinates](https://github.com/syntagmatic/parallel-coordinates/blob/master/LICENSE).
