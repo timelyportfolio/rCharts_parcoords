@@ -1,4 +1,4 @@
-Experiments with [rCharts](http://rcharts.io/) and [d3.js Parallel Coordinates](http://syntagmatic.github.io/parallel-coordinates/)
+[rCharts](http://rcharts.io/) + [d3.js Parallel Coordinates](http://syntagmatic.github.io/parallel-coordinates/)
 =================
 
 This [parallel coordinates](https://github.com/syntagmatic/parallel-coordinates) library for [d3.js](http://d3js.org)
