@@ -11,4 +11,4 @@ Here is a [great video](http://youtu.be/ypc7Ul9LkxA) on parallel coordinates at 
 
 
 
-Please see the [license for parallel coordinates](https://github.com/syntagmatic/parallel-coordinates/blob/master/LICENSE).
+Please see the [license for parallel coordinates](https://github.com/syntagmatic/parallel-coordinates/blob/master/LICENSE) and the [license for d3.js](https://github.com/mbostock/d3/blob/master/LICENSE).
